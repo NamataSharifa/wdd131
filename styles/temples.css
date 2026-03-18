@@ -74,3 +74,8 @@ padding:1rem;
 background:#eee;
 margin-top:2rem;
 }
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
