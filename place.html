@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Place Page</title>
+  <meta name="description" content="A responsive place page featuring a hero image, country details, and weather information.">
+  <meta name="author" content="Namata Sharifa">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Uganda</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/place-hero-large.webp">
+        <img src="images/place-hero-small.webp" alt="Beautiful landscape view of Uganda">
+      </picture>
+    </section>
+
+    <section class="content">
+      <div class="card data">
+        <h2>Data</h2>
+        <ul>
+          <li><strong>Area:</strong> 241,038 km²</li>
+          <li><strong>Population:</strong> 48,582,334</li>
+          <li><strong>Capital:</strong> Kampala</li>
+          <li><strong>Languages:</strong> English, Swahili</li>
+          <li><strong>Currency:</strong> Ugandan Shilling</li>
+          <li><strong>Time Zone:</strong> UTC+3</li>
+          <li><strong>Calling Code:</strong> +256</li>
+          <li><strong>Internet TLD:</strong> .ug</li>
+        </ul>
+      </div>
+
+      <div class="card weather">
+        <h2>Weather</h2>
+        <img class="weather-icon" src="images/weather.svg" alt="Weather icon">
+        <ul>
+          <li><strong>Temperature:</strong> <span id="temperature">8</span> °C</li>
+          <li><strong>Conditions:</strong> Partly Cloudy</li>
+          <li><strong>Wind:</strong> <span id="windSpeed">6</span> km/h</li>
+          <li><strong>Wind Chill:</strong> <span id="windChill"></span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> 🌸 Namata Sharifa 🌸 Uganda</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
