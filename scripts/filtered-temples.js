@@ -48,8 +48,6 @@ const temples = [
     area: 116642,
     imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
-
-  // ✅ Added temples
   {
     templeName: "Salt Lake Temple",
     location: "Salt Lake City, Utah, United States",
@@ -72,6 +70,7 @@ const temples = [
     imageUrl: "https://churchofjesuschrist.org/imgs/paris.jpeg"
   }
 ];
+
 const container = document.querySelector("#temple-container");
 
 function displayTemples(templeList) {
@@ -91,6 +90,8 @@ function displayTemples(templeList) {
     container.appendChild(card);
   });
 }
+
+// FILTERS
 document.querySelector("#home").addEventListener("click", () => {
   displayTemples(temples);
 });
@@ -110,6 +111,10 @@ document.querySelector("#large").addEventListener("click", () => {
 document.querySelector("#small").addEventListener("click", () => {
   displayTemples(temples.filter(t => t.area < 10000));
 });
+
+// FOOTER
 document.querySelector("#year").textContent = new Date().getFullYear();
 document.querySelector("#lastModified").textContent = document.lastModified;
+
+// INITIAL LOAD
 displayTemples(temples);
