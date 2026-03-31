@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+main {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+/* Images stacked vertically */
+img {
+    display: block;
+    margin: 20px auto;
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+
+    /* Start invisible */
+    opacity: 0;
+
+    /* Animation */
+    animation: fadeIn 1.5s ease forwards;
+}
+
+/* Fade-from-black effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        filter: brightness(0);
+    }
+    to {
+        opacity: 1;
+        filter: brightness(1);
+    }
+}
+
+footer {
+    margin: 30px 0;
+    font-size: 0.9rem;
+}
