@@ -26,3 +26,17 @@ img {
   width: 100%;
   height: auto;
 }
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+nav a:hover {
+  background-color: #333;
+  color: white;
+}
+@media (min-width: 768px) {
+  #temple-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
