@@ -1,0 +1,48 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+    color: #333333;
+}
+
+/* Header */
+header {
+    background-color: #2E7D32;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: Georgia, serif;
+}
+
+/* Sections */
+section {
+    background: white;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* Accent color */
+h2 {
+    color: #2E7D32;
+}
+
+/* Wireframe boxes */
+.wireframe {
+    border: 2px dashed #FFB300;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #2E7D32;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
