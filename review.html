@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Review Submitted</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script defer>
+    let count = localStorage.getItem("reviewCount");
+
+    if (!count) {
+      count = 0;
+    }
+
+    count++;
+    localStorage.setItem("reviewCount", count);
+
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("counter").textContent = count;
+    });
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1>Thank You!</h1>
+  </header>
+
+  <main>
+    <p>Your review has been submitted successfully.</p>
+    <p>Total Reviews Submitted: <strong id="counter"></strong></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 | Namata Sharifa
+        
+    </p>
+  </footer>
+</body>
+</html>
