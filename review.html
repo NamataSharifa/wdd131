@@ -2,19 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Review Submitted</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Review Submitted | Product Review</title>
+
+  
+  <meta name="description" content="Thank you for submitting your product review. View your submission count.">
+  <meta name="author" content="Namata Sharifa">
+
   <link rel="stylesheet" href="styles/styles.css">
+
+  
   <script defer>
-    let count = localStorage.getItem("reviewCount");
-
-    if (!count) {
-      count = 0;
-    }
-
-    count++;
-    localStorage.setItem("reviewCount", count);
-
     document.addEventListener("DOMContentLoaded", () => {
+      let count = localStorage.getItem("reviewCount");
+
+      if (!count) {
+        count = 0;
+      }
+
+      count = Number(count) + 1;
+
+      localStorage.setItem("reviewCount", count);
+
       document.getElementById("counter").textContent = count;
     });
   </script>
@@ -27,13 +37,15 @@
 
   <main>
     <p>Your review has been submitted successfully.</p>
-    <p>Total Reviews Submitted: <strong id="counter"></strong></p>
+
+    <p>Total Reviews Submitted: <strong id="counter">0</strong></p>
+
+    
+    <p><a href="form.html">Submit another review</a></p>
   </main>
 
   <footer>
-    <p>&copy; 2026 | Namata Sharifa
-        
-    </p>
+    <p>&copy; 2026 | Namata Sharifa</p>
   </footer>
 </body>
 </html>
