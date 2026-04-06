@@ -145,3 +145,25 @@ document.addEventListener("DOMContentLoaded", () => {
   // References page
   displayCredits();
 });
+
+// FUNCTION: DISPLAY FEATURED MEALS ✅
+function displayFeaturedMeals() {
+  const container = document.querySelector("#featured");
+
+  if (!container) return;
+
+  // show first 2 meals only
+  const featuredMeals = meals.slice(0, 2);
+
+  container.innerHTML = "";
+
+  featuredMeals.forEach(meal => {
+    container.innerHTML += `
+      <div class="meal">
+        <img src="${meal.image}" alt="${meal.name}" loading="lazy">
+        <h3>${meal.name}</h3>
+        <p>Price: $${meal.price}</p>
+      </div>
+    `;
+  });
+}

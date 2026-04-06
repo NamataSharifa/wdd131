@@ -39,3 +39,50 @@ main {
     gap: 1rem;
   }
 }
+/* HERO SECTION */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('../images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  margin-bottom: 1rem;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  background: #f39c12;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #e67e22;
+}
+
+/* FEATURED GRID */
+.meal-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .meal-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
